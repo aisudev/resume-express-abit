@@ -1,13 +1,24 @@
-/*
-Theme Name: City Square Theme
-Author URI: http://webthemez.com/
-Description: This theme is a pretty versatile, that places the emphasis of the home page. It would be great for a corporate websites, business websites, personal blog.
-License: Free to use for personal and commercial, but you need to place back link in the bottom of the template.
-*/
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700);
 @font-face {
     font-family: Pacifico;
     src: url('../fonts/Pacifico-Regular.ttf');
+}
+@font-face {
+    font-family: Source Sans Pro;
+    font-style: normal; 
+    font-weight: 400;
+    src: url('../fonts/SourceSansPro-Regular.ttf');
+}
+@font-face {
+    font-family: Source Sans Pro;
+    font-style: normal; 
+    font-weight: 600;
+    src: url('../fonts/SourceSansPro-Regular.ttf');
+}
+@font-face {
+    font-family: Source Sans Pro;
+    font-style: normal; 
+    font-weight: 700;
+    src: url('../fonts/SourceSansPro-Regular.ttf');
 }
 * {
     margin: 0;
@@ -380,6 +391,18 @@ background: none;
     .heading p {
         font-size: 1.2em;
     }
+    .heading img{
+        width: 250px;
+        border: 0px solid black;
+        border-radius: 5px;
+        box-shadow: 0px 0px black;
+        transition: .5s;
+    }
+    .heading img:hover{
+        border: 1px solid black;
+        border-radius: 0px;
+        box-shadow: 5px 5px black;
+    }
 
 .pdingBtm30 {
     padding-bottom: 30px;
@@ -421,14 +444,18 @@ background:#fff;
 font-size: x-large;
 }
 
-#aboutUs .txtHead{
+#about .txtHead{
 background:#fff;
 padding:20px 10px;
 }
-#aboutUs .txtHead .fa {
+#about .txtHead img{
+    width: 100px;
+    height: 100px;
+}
+/* #about .txtHead .fa {
 font-size: 58px;
 color: #5E5E5E;
-}
+} */
 .tileBox p{
     background-color: #f0f0f0;
 font-size: 15px;
@@ -1148,3 +1175,13 @@ footer {
         user-select: none;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
+
+.donatebtn{
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+.donateContainer{
+    text-align: center;
+    margin: 50px 0;
+}
